@@ -1,0 +1,177 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+    background: -moz-linear-gradient(to bottom, #FFFFFF, #0099ff);
+    background: linear-gradient(to bottom, #FFFFFF, #0099ff);
+	}
+
+.cube {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   transform-style: preserve-3d;
+   transform: rotateX(-20deg) rotateY(-45deg);
+   top: 50%;
+   left: 50%;
+   margin-left: -50px;
+   margin-top: -50px;
+}
+
+.cube div {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+.cube div.top {
+   transform: rotateX(90deg);
+   margin-top: -50px;
+   background-color:#FF0000;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+}
+
+.cube div.right {
+   transform: rotateY(90deg); 
+   margin-left: 50px;
+   background-color:#FFFF00;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+}
+
+.cube div.bottom {
+  transform: rotateX(90deg);
+  margin-top: 50px;
+   background-color:#FF0000;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+}
+
+.cube div.left {
+   transform: rotateY(-90deg);
+   margin-left: -50px;
+   background-color:#FFFF00;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+}
+
+.cube div.front {
+   transform: translateZ(50px); 
+   background-color:#9900FF;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+	}
+
+.cube div.back {
+   transform: translateZ(-50px); 
+   background-color:#9900FF;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+}
+
+
+.cube2 {
+   width: 50px;
+   height: 50px;
+   position: relative;
+   transform-style: preserve-3d;
+   transform: rotateX(-20deg) rotateY(-45deg);
+   top: 50%;
+   left: 50%;
+   margin-left: -50px;
+   margin-top: -50px;
+}
+
+.cube2 div {
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   background-color:#FF0000;
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:”alpha(opacity=50)”;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  border:1px solid #000000;
+   box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+.cube2 div.top2 {
+   transform: rotateX(90deg);
+   margin-top: -25px;
+}
+
+.cube2 div.right2 {
+   transform: rotateY(90deg); 
+   margin-left: 25px;
+}
+
+.cube2 div.bottom2 {
+  transform: rotateX(90deg);
+  margin-top: 25px;
+}
+
+.cube2 div.left2 {
+   transform: rotateY(-90deg);
+   margin-left: -25px;
+}
+
+.cube2 div.front2 {
+   transform: translateZ(25px); 
+}
+
+.cube2 div.back2 {
+   transform: translateZ(-25px); 
+}
+
+
+#kotak {
+  cursor:move;
+  float:left;
+}
+#kotak2 {
+  cursor:move;
+  float:left;
+}
+
+
+/*.draggable {
+  background-color:yellow;
+}*/
